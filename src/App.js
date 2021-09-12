@@ -1,10 +1,8 @@
-import logo from './logo.svg';
+import Home from "./pages/home/Home";
+import {Person} from "@material-ui/icons"
+
 function App() {
-  return (
-    <div>
-      Hello World!
-    </div>
-  );
+ return <Home/>
 }
 
 export default App;
