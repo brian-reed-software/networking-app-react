@@ -1,5 +1,5 @@
 import "./header.css"
-import { Search, Person } from "@material-ui/icons";
+import { Search, Person, Chat, Notifications } from "@material-ui/icons";
 
 
 export default function Header() {
@@ -10,7 +10,7 @@ export default function Header() {
             </div>
             <div className="headerCenter">
                 <div className="searchBar">
-                    <Search />
+                    <Search className="searchIcon" />
                     <input placeholder="Search for friend, post or video." type="text" className="searchInput" />
                 </div>
             </div>
@@ -18,20 +18,32 @@ export default function Header() {
                 <span className="headerLink">
                     Homepage
                 </span>
-                
                 <span className="headerLink">
                     Timeline
                 </span>
-
+            </div>
                 <div className="headerIcons">
                     <div className="headerIconItem">
                     <Person />
                     <span className="headerIconBadge">
                         1
                     </span>
+                    <div className="headerIconItem">
+                    <Chat />
+                    <span className="headerIconBadge">
+                        1
+                    </span>
+                    <div className="headerIconItem">
+                    <Notifications />
+                    <span className="headerIconBadge">
+                        1
+                    </span>
+                    
                     </div>
-                </div>
+                    </div>
+                    </div>
+                <img src="/assets/person/1.jpeg" alt="" className="headerImg" />
             </div>
         </div>
-    )
+    );
 }
