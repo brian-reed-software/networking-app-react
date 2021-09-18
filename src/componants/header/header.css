@@ -100,3 +100,52 @@
     cursor: pointer;
     border:1px solid black;
 }
+@media screen and (max-width: 600px) {
+    body {
+      background-color: black;
+    }
+    .headerContainer{
+        width: 100%;
+        height: 100%;
+        background-color: paleturquoise;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: sticky;
+        top: 0;
+    }
+    .headerCenter{
+        display: flex;
+        flex: 3;
+        align-items: center;
+        width: 100%;
+        height: 30px;
+        justify-content: center;    }
+    .searchBar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 30px;
+        background-color: white;
+        border-radius: 30px;
+        border: 1px solid black;
+    }
+    .headerIcons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex:1;
+    }
+    .headerRight{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logoSpan{
+        margin-left: 0px;
+    }
+    .logo{
+        margin-left: 0px;
+    }
+  }

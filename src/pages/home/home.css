@@ -1,4 +1,17 @@
 .homeContainer{
     display: flex;
     width: 100%;
+    background-color: paleturquoise;
+}
+
+
+@media screen and (max-width: 600px) {
+    body {
+      background-color: black;
+    }
+    .homeContainer{
+        display: flex;
+        width: 100%;
+        background-color: paleturquoise;
+    }
 }

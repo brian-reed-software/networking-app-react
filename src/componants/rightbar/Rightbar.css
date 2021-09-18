@@ -1,3 +1,5 @@
 .rightbarContainer{
 flex:4;
+display: flex;
+justify-content: center;
 }

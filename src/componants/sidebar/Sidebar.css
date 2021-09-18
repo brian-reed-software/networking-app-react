@@ -1,4 +1,6 @@
 .sidebarContainer{
     display: flex;
     flex:3;
+    display: flex;
+    justify-content: center;
 }
