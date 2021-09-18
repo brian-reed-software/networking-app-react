@@ -1,9 +1,4 @@
 .sidebarContainer{
-    height:50px;
-    width: 100%;
-    background-color: paleturquoise;
     display: flex;
-    align-items: center;
-    position: sticky;
-    top: 0;
+    flex:3;
 }
