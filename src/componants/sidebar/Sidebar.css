@@ -1,7 +1,14 @@
 .sidebarContainer{
     display: flex;
-    flex:2;
-    justify-content: center;
+    flex:1;
+    padding: 10px;
+}
+ul{
+    padding: 0px;
+}
+li{
+    list-style-type: none;
+    padding-top: 10px;
 }
 @media screen and (max-width: 600px) {
     body {
