@@ -4,6 +4,8 @@ import { Search, Person, Chat, Notifications } from "@material-ui/icons";
 
 export default function Header() {
     return (
-        <h1>Feed</h1>
+        <div className="feedContainer">
+            Feed
+        </div>
     );
 }

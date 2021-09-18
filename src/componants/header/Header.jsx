@@ -6,12 +6,12 @@ export default function Header() {
     return (
         <div className="headerContainer">
             <div className="headerLeft">
-                <span className="logo">Social</span>
+                <span className="logoSpan"><img  className="logo" src="https://res.cloudinary.com/at100dev/image/upload/v1628713361/social_again_l9lsgr.svg"></img></span>
             </div>
             <div className="headerCenter">
                 <div className="searchBar">
                     <Search className="searchIcon" />
-                    <input placeholder="Search for friend, post or video." type="text" className="searchInput" />
+                    <input placeholder="Search for friends, posts or videos." type="text" className="searchInput" />
                 </div>
             </div>
             <div className="headerRight">

@@ -11,12 +11,20 @@
 .headerLeft{
     flex: 3;
     background-color: paleturquoise;
+    color: black;
 }
-.logo{
+.logoSpan{
     font-size: 24px;
     margin-left: 20px;
     font-weight: bold;
-    color: white;
+    color: black;
+    cursor: pointer;
+}
+.logo{
+    height:50px;
+    margin-left: 20px;
+    font-weight: bold;
+    color: black;
     cursor: pointer;
 }
 .searchBar{
@@ -24,6 +32,7 @@
     height: 30px;
     background-color: white;
     border-radius: 30px;
+    border: 1px solid black;
     display: flex;
     align-items: center;
 }
@@ -48,9 +57,11 @@
     align-items: center;
     justify-content: space-around;
     background-color: paleturquoise;
-    color: bisque;
+    margin-left: 5px;
+    color:deeppink;
 }
 .headerLink{
+    color:deeppink;
     margin-right: 10px;
     font-style: 14px;
     cursor: pointer;
@@ -82,9 +93,10 @@
 }
 
 .headerImg{
-    width: 32px;
-    height: 32px;
+    width: 36px;
+    height: 36px;
     border-radius: 50%;
     object-fit: cover;
     cursor: pointer;
+    border:1px solid black;
 }

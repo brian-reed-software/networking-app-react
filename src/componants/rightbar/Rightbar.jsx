@@ -4,7 +4,7 @@ import { Search, Person, Chat, Notifications } from "@material-ui/icons";
 
 export default function Header() {
     return (
-        <div className="">
+        <div className="rightbarContainer">
             Rightbar
         </div>
     );
