@@ -14,6 +14,7 @@ export default function Header() {
                     <input placeholder="Search for friends, posts or videos." type="text" className="searchInput" />
                 </div>
             </div>
+            <div className="headerWrapper">
             <div className="headerRight">
                 <span className="headerLink">
                     Homepage
@@ -44,6 +45,7 @@ export default function Header() {
                     </div>
                     </div>
                 <img src="/assets/person/1.jpeg" alt="" className="headerImg" />
+            </div>
             </div>
     );
 }

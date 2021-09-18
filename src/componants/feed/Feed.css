@@ -2,8 +2,8 @@
     flex:5;
     display: flex;
     justify-content: center;
-    height:100%;
     background-color: grey;
+    height: calc(100vh - 50px);
 }
 @media screen and (max-width: 600px) {
     body {
@@ -15,5 +15,6 @@
         background-color: grey;
         flex-direction: column;
         justify-content: space-between;
+        background-color: paleturquoise;
     }
 }

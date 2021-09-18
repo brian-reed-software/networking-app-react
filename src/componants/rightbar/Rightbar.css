@@ -2,6 +2,7 @@
     flex:2;
     display: flex;
     justify-content: center;
+    height: calc(100vh - 50px);
 }
 @media screen and (max-width: 600px) {
     body {

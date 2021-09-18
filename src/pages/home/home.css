@@ -3,6 +3,9 @@
     width: 100%;
     height: 100vh;
     background-color: paleturquoise;
+    padding-top: 50px;
+    margin-top: -50px;
+    height: calc(100vh - 50px);
 }
 
 

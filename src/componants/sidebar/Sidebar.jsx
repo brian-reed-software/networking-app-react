@@ -55,8 +55,17 @@ export default function Header() {
                         School
                     </span>
                 </li>
-                
             </ul>
+            <button className="sidebarButton">
+                Show More
+            </button>
+            <hr className="sidebarHr"/>
+            <li className="sidebarFriend">
+                <img className="sidebarFriendImg" src="/assets/person/2.jpeg"/>
+                <span className="sidebarFriendName">
+                    Friend Name
+                </span>
+            </li>
         </div>
         </div>
     );

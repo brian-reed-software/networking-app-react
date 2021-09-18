@@ -1,10 +1,11 @@
 .sidebarContainer{
     display: flex;
     flex:1;
-    padding: 10px;
+    height: calc(100vh - 50px);
 }
 .sidebarWrapper{
     display: flex;
+    flex-direction: column;
 }
 ul{
     padding: 0px;
@@ -24,33 +25,107 @@ li{
     position: relative;
     margin-left: 20px;
     margin-top: -10px;
+    cursor: pointer;
 }
+.sidebarListItem{
+    margin-bottom: 10px;
+}
+.sidebarButton{
+    cursor: pointer;
+    
+}
+.sidebarHr{
 
+}
+.sidebarFriend{
+
+}
+.sidebarFriendImg{
+    display: flex;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+.sidebarFriendName{
+    position: relative;
+    margin-left: 20px;
+    margin-top: 0px;
+    cursor: pointer;
+}
+.MuiSvgIcon-root{
+    cursor: pointer;
+}
 @media screen and (max-width: 600px) {
     body {
       background-color: black;
     }
     .sidebarContainer{
         display: flex;
-        flex: 0;
-        width: 95%;
-        height: 10%;
+        justify-content: center;
+        flex: 0;    
         padding: 0px;
-        background-color: paleturquoise;
         flex-direction: row;
+        position: fixed;
+        background-color: transparent;
+        backdrop-filter: blur(10px);
+        width: -webkit-fill-available;
+        height: auto;
     }
     .sidebarWrapper{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        align-items: center;
+        width: 98%;
     }
     ul{
         padding: 0px;
         display: flex;
         flex-direction: row;
+        display: flex;
+        justify-content: space-between;
     }
     li{
         list-style-type: none;
         padding-top: 10px;
         filter: drop-shadow(0px 5px 4px black);
+    }
+    .feedContainer{
+        padding-top: 50px;
+        margin-top: 50px;
+    }
+    .sidebarListItem{
+        display: flex;
+        justify-content: center;
+        margin-top: 0px;
+        padding-top: 0px;
+        font-size: 8px;
+    }
+    .sidebarFriend{
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+    .sidebarListItemText{
+        
+        display: flex;
+        justify-content: center;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    .sidebarFriendName{
+            margin-left: 0px;
+            margin-top: 0px;
+            font-size: 8px;
+    }
+    .sidebarIcon{
+        width: auto;
+    }
+    .MuiSvgIcon-root{
+        width: auto;
+    }
+    .sidebarButton{
+        width: 100%;
     }
 }

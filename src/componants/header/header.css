@@ -1,17 +1,22 @@
 .headerContainer{
     height:50px;
     width: 100%;
-    background-color: paleturquoise;
     display: flex;
     align-items: center;
     position: sticky;
     top: 0;
     filter: drop-shadow(0px 5px 4px black);
+    backdrop-filter: blur(10px);
+    z-index: 20;
+}
+.headerWrapper{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
 }
 
 .headerLeft{
     flex: 3;
-    background-color: paleturquoise;
     color: black;
 }
 .logoSpan{
@@ -39,6 +44,8 @@
     align-items: center;
     filter: drop-shadow(0px 5px 4px black);
 }
+.searchBar:active{
+}
 .searchIcon{
     font-style: 20px !important;
     margin-left: 10px;
@@ -46,21 +53,25 @@
 }
 .searchInput{
     border: none;
+    font-size: 1.2vw;
     width: 70%;
+    background-color: transparent;
+    filter: drop-shadow(0px 5px 4px black);
 }
 .searchInput:focus{
     outline: none;
+    font-weight: bold;
+    font-size: larg;
+
 }
 .headerCenter{
     flex: 5;
-    background-color: paleturquoise;
 }
 .headerRight{
     flex: 4;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: paleturquoise;
     margin-left: 5px;
     color:deeppink;
     text-shadow: 0px 5px 4px black;
@@ -89,7 +100,7 @@
 .headerIconBadge{
     width: 15px;
     height: 15px;
-    background-color: blueviolet;
+    background-color: red;
     border-radius: 50%;
     color: white;
     position: absolute;
@@ -117,12 +128,19 @@
     .headerContainer{
         width: 100%;
         height: 100%;
-        background-color: paleturquoise;
         display: flex;
         flex-direction: column;
         align-items: center;
         position: sticky;
         top: 0;
+        z-index: 20;
+    }
+    .headerWrapper{
+        display: flex;
+        flex-direction: row-reverse;
+        width: -webkit-fill-available;
+        justify-content: space-evenly;
+        padding: 10px;
     }
     .headerCenter{
         display: flex;
@@ -143,12 +161,13 @@
     }
     .headerIcons{
         display: flex;
+        flex: 0;
         justify-content: center;
         align-items: center;
-        flex:1;
     }
     .headerRight{
         display: flex;
+        flex: 0;
         justify-content: space-between;
         align-items: center;
     }
@@ -157,5 +176,8 @@
     }
     .logo{
         margin-left: 0px;
+    }
+    .searchInput{
+    font-size: 2vw;
     }
   }
