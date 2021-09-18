@@ -1,4 +1,4 @@
-import "./header.css"
+import "./Header.css"
 import { Search, Person, Chat, Notifications } from "@material-ui/icons";
 
 
