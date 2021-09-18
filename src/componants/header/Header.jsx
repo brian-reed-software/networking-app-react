@@ -42,8 +42,8 @@ export default function Header() {
                     </div>
                     </div>
                     </div>
+                    </div>
                 <img src="/assets/person/1.jpeg" alt="" className="headerImg" />
             </div>
-        </div>
     );
 }

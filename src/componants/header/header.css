@@ -68,6 +68,8 @@
 }
 .headerIcons{
     display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 .headerIconItem{
     display: flex;

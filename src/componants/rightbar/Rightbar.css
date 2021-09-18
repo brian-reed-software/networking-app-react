@@ -1,5 +1,17 @@
 .rightbarContainer{
-flex:4;
-display: flex;
-justify-content: center;
+    flex:2;
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width: 600px) {
+    body {
+      background-color: black;
+    }
+    .rightbarContainer{
+        display: flex;
+        flex:2;
+        width: 100%;
+        background-color: paleturquoise;
+        flex-direction: row;
+    }
 }
