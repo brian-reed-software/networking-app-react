@@ -3,13 +3,28 @@
     flex:1;
     padding: 10px;
 }
+.sidebarWrapper{
+    display: flex;
+}
 ul{
     padding: 0px;
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    flex-direction: column;
 }
 li{
     list-style-type: none;
-    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
+.sidebarListItemText{
+    position: relative;
+    margin-left: 20px;
+    margin-top: -10px;
+}
+
 @media screen and (max-width: 600px) {
     body {
       background-color: black;
@@ -17,9 +32,24 @@ li{
     .sidebarContainer{
         display: flex;
         flex: 0;
-        width: 100%;
+        width: 95%;
         height: 10%;
+        padding: 0px;
         background-color: paleturquoise;
         flex-direction: row;
+    }
+    .sidebarWrapper{
+        display: flex;
+        flex-direction: row;
+    }
+    ul{
+        padding: 0px;
+        display: flex;
+        flex-direction: row;
+    }
+    li{
+        list-style-type: none;
+        padding-top: 10px;
+        filter: drop-shadow(0px 5px 4px black);
     }
 }
