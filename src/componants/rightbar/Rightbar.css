@@ -3,6 +3,7 @@
     display: flex;
     justify-content: center;
     height: calc(100vh - 50px);
+    min-width: 200px;
 }
 @media screen and (max-width: 600px) {
     body {
@@ -10,9 +11,13 @@
     }
     .rightbarContainer{
         display: flex;
-        flex:2;
         width: 100%;
-        background-color: paleturquoise;
-        flex-direction: row;
+        height: 50px;
+        background-color: deepskyblue;
+        position: fixed;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        bottom: 0;
     }
 }

@@ -3,6 +3,8 @@
     flex:1;
     height: calc(100vh - 50px);
     overflow-y: scroll;
+    min-width: 200px;
+    z-index: 19;
 }
 ::-webkit-scrollbar{
     width:5px;
