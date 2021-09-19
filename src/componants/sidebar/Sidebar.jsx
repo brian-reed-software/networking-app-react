@@ -66,6 +66,37 @@ export default function Header() {
                     Friend Name
                 </span>
             </li>
+            <li className="sidebarFriend">
+                <img className="sidebarFriendImg" src="/assets/person/2.jpeg"/>
+                <span className="sidebarFriendName">
+                    Friend Name
+                </span>
+            </li>
+            <li className="sidebarFriend">
+                <img className="sidebarFriendImg" src="/assets/person/2.jpeg"/>
+                <span className="sidebarFriendName">
+                    Friend Name
+                </span>
+            </li>
+            <li className="sidebarFriend">
+                <img className="sidebarFriendImg" src="/assets/person/2.jpeg"/>
+                <span className="sidebarFriendName">
+                    Friend Name
+                </span>
+            </li>
+            <li className="sidebarFriend">
+                <img className="sidebarFriendImg" src="/assets/person/2.jpeg"/>
+                <span className="sidebarFriendName">
+                    Friend Name
+                </span>
+            </li>
+            <li className="sidebarFriend">
+                <img className="sidebarFriendImg" src="/assets/person/2.jpeg"/>
+                <span className="sidebarFriendName">
+                    Friend Name
+                </span>
+            </li>
+            
         </div>
         </div>
     );

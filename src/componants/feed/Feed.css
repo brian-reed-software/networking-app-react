@@ -16,5 +16,6 @@
         flex-direction: column;
         justify-content: space-between;
         background-color: paleturquoise;
+        padding-top:100px;
     }
 }
