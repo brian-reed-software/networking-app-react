@@ -1,0 +1,88 @@
+.shareContainer{
+    width: -webkit-fill-available;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    height: calc(100vh - 50px);
+    padding: 10px;
+}
+.shareWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 90px;
+    background-color: slategrey;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: inset 0 0 10px 3px black;
+    filter: drop-shadow(3px 3px 3px black);
+}
+.shareUserInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 80%;
+}
+.shareProfileImg{
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    object-fit: cover;
+    padding: 10px;
+}
+.shareBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 30px;
+    background-color: white;
+    border-radius: 30px;
+    border: 1px solid black;
+    box-shadow: inset 0 0 30px 0px white;
+    filter: drop-shadow(3px 3px 3px black);
+}
+.shareInput{
+    border: none;
+    font-size: 1.2vw;
+    width: 98%;
+    background-color: transparent;
+    filter: drop-shadow(0px 5px 4px black);
+}
+.shareInput:focus{
+    outline: none;
+    font-weight: bold;
+    font-size: large;
+}
+.shareHr{
+
+}
+.shareOption{
+
+}
+.shareOptions{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    width: 25%;
+}
+.shareOptionText{
+padding: 10px;
+}
+.userName{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+@media screen and (max-width: 600px) {
+    body {
+      background-color: black;
+    }
+    .shareContainer{
+        display: flex;
+        flex:2;
+        width: 100%;
+        flex-direction: row;
+    }
+}

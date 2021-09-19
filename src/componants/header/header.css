@@ -61,8 +61,7 @@
 .searchInput:focus{
     outline: none;
     font-weight: bold;
-    font-size: larg;
-
+    font-size: large;
 }
 .headerCenter{
     width: -webkit-fill-available;

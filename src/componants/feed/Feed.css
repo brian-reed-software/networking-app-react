@@ -2,8 +2,14 @@
     flex:5;
     display: flex;
     justify-content: center;
-    background-color: grey;
+    background-color: black;
     height: calc(100vh - 50px);
+    box-shadow: inset 0 1px 4px 4px deepskyblue;
+}
+.feedWrapper{
+    width: -webkit-fill-available;
+    padding: 10px;
+    box-shadow: inset 0 1px 24px 4px deepskyblue;
 }
 @media screen and (max-width: 600px) {
     body {
@@ -15,7 +21,8 @@
         background-color: grey;
         flex-direction: column;
         justify-content: space-between;
-        background-color: paleturquoise;
-        padding-top:100px;
+        background-color: slategrey;
+        margin-top:140px;
+        
     }
 }

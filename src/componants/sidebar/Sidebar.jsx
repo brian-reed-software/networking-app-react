@@ -60,6 +60,7 @@ export default function Header() {
                 Show More
             </button>
             <hr className="sidebarHr"/>
+            <div className="sidebarFriendWrapper">
             <li className="sidebarFriend">
                 <img className="sidebarFriendImg" src="/assets/person/2.jpeg"/>
                 <span className="sidebarFriendName">
@@ -96,6 +97,7 @@ export default function Header() {
                     Friend Name
                 </span>
             </li>
+            </div>
             
         </div>
         </div>
