@@ -62,7 +62,8 @@ li{
     cursor: pointer;
 }
 .sidebarHr{
-    margin:20px 0;
+    margin:10px 0;
+    border: 1px solid black;
 }
 .sidebarFriendList{
     padding:0;

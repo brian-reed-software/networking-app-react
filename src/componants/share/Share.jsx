@@ -26,7 +26,6 @@ export default function Share() {
                 <div className="shareOption">
                     <span className="shareOptionText">
                         Upload <br/>
-                        Photo / Video
                     </span>
                 </div>
             </div>
