@@ -22,28 +22,43 @@ export default function Rightbar() {
                     Friends Online
 
                     </span>
-                    <span className="rightbarFriend">
+                </li>
+                <li className="rightbarListItem">
+                <span className="rightbarFriendItem">
                         <div className="rightbarProfileImgContainer">
                         <img className="rightbarProfileImg" 
                         src="/assets/person/4.jpeg" 
                         alt=""/>
-                        <div className="rightbarProfileImgName">
-                            Leo
+                        <div className="rightbarProfileImgNameOnline">
+                         
+                         </div>
+
+                        <span className="rightbarProfileImgName">
+                            Leoe
+                        </span>
                         </div>
-                        </div>
+
+
                     </span>
                 </li>
                 <li className="rightbarListItem">
-                    <OndemandVideo className="rightbarIcon" />
-                    <span className="rightbarListItemText">
-                        Videos
+                <span className="rightbarFriendItem">
+                        <div className="rightbarProfileImgContainer">
+                        <img className="rightbarProfileImg" 
+                        src="/assets/person/4.jpeg" 
+                        alt=""/>
+                        <div className="rightbarProfileImgNameOnline">
+                         
+                         </div>
+
+                        <span className="rightbarProfileImgName">
+                            Leoeeeeeeeeeeeeee
+                        </span>
+                        </div>
+
+
                     </span>
-                </li>
-                <li className="rightbarListItem">
-                    <Group className="rightbarIcon" />
-                    <span className="rightbarListItemText">
-                        Groups
-                    </span>
+ 
                 </li>
                 <li className="rightbarListItem">
                     <Bookmark className="rightbarIcon" />
