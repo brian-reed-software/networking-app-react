@@ -12,6 +12,7 @@
 .feedWrapper{
     width: -webkit-fill-available;
     padding: 10px;    
+    overflow-y: scroll;
 }
 @media screen and (max-width: 600px) {
     body {

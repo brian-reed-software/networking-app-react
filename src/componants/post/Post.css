@@ -1,4 +1,4 @@
-.shareContainer{
+.postContainer{
     width: -webkit-fill-available;
     border-radius: 10px;
     display: flex;
@@ -12,58 +12,78 @@
     background-position-x: right;
     background-position-y: bottom;
 }
-.shareWrapper{
+.postWrapper{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 10px;
+    padding: 5px;
     border-radius: 10px;
     text-shadow: 0px 1px 3px black;
     box-shadow: inset 0 0 6px 0px black;
      backdrop-filter: blur(10px) drop-shadow(2px 4px 6px black);
     backdrop-filter: hue-rotate(
-        33deg
+        233deg
         );
-    
 }
-.shareIcons{
-    filter: drop-shadow(0px 5px 4px black);
+.postUserWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: -webkit-fill-available;
+    padding: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    filter: drop-shadow(0px 5px 5px black);
 }
-.shareUserInfoWrapper{
+.postStoryWrapper{
+    width:-webkit-fill-available;
+    display: flex;
+    flex-direction: column;
+}
+.postIcons{
+}
+.postUserInfoWrapper{
     display: flex;
     flex-direction: row;
     align-items: center;
     width: -webkit-fill-available;
+    padding:10px;
 }
-.shareUserInfo{
+.postUserInfo{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    filter: drop-shadow(0px 5px 4px black);
 }
-.shareProfileImg{
+.postProfileImg{
     width: 56px;
     height: 56px;
     border-radius: 100%;
     object-fit: cover;
     padding: 10px;
 }
-.shareProfileText{
-    margin-top: -20px;
+.postImg{
+    object-fit: contain;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: -125px;
+    box-shadow: inset 0 0 16px 10px black;
 }
-.shareBar{
+.postProfileText{
+    margin-top: -20px;
+    margin-left: 20px;
+}
+.postBar{
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     width: 90%;
     height: 30px;
     border-bottom: 1px solid white;
     margin-bottom: -20px;
     margin-left: -30px;
-    padding-right: 130px;
 }
-.shareInput{
+.postInput{
     border: none;
     color: white;
     font-size: 1.5vw;
@@ -71,41 +91,66 @@
     margin-left: 30px;
     margin-top: 5px;
     background-color: transparent;
-    filter: drop-shadow(0px 5px 4px black);
 }
-.shareInput:focus{
+.postInput:focus{
     outline: none;
     font-size: 2vw;
     font-weight: bold;
     height: 50px;
 }
-.shareHr{
+.postHr{
     height:100%;
     margin: 10 0px;
     border: 1px solid black ;
-    filter: drop-shadow(0px 5px 4px black);
 }
-.shareOption{
+.postOption{
+    width: 150px;
+}
+.postOptionEmoji{
+    width: 150px;
+}
+.postOptionComments{
+    width: 150px;
+}
+.postOptionLikes{
+    width: 150px;
+}
+.postOptionLocation{
+    width: 150px;
+}
+
+
+.postLocEmoji{
+    width: -webkit-fill-available;
+    display: flex;
+    justify-content: space-between;
+}
+.postOptionText{
+    padding: 2px;
+}
+.postOptionEmoji{
 
 }
-.shareOptions{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: -webkit-fill-available;
-    padding: 10px;
-    flex-wrap: wrap;
+.postOptionLikes{
+
 }
-.shareOptionText{
-    padding: 10px;
-    filter: drop-shadow(0px 5px 4px black);
+.postOptionComments{
+    cursor: pointer;
 }
-.userName{
+
+.postStory{
+    width:-webkit-fill-available;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
-.shareButton{
+.postName{
+    width: -webkit-fill-available;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.postButton{
     color: white;
     margin-left: -95px;
     padding-top: 0px;
@@ -121,7 +166,11 @@
     user-select: none;
     transition: all .5s ease-in-out;
 }
-.shareButton:hover{
+.postNameText{
+    display: flex;
+    flex-direction: column;
+}
+.postButton:hover{
     margin-top: 10px;
     padding-bottom: 21px;
     background-color: rgba(255,255,255,.2);
@@ -131,7 +180,7 @@
     transition: all .5s ease-in-out;
 }
 
-.shareButton:active{
+.postButton:active{
     content: "";
     color: black;
     margin-left: -95px;
@@ -149,10 +198,10 @@
     user-select: none;
     transition: ease-out;
 }
-.shareButton:active:before{
+.postButton:active:before{
     visibility: none;
 }
-.shareButton:active:after{
+.postButton:active:after{
     content: '';
     padding-left: -20px;
 }
@@ -162,7 +211,7 @@
     body {
       background-color: black;
     }
-    .shareContainer{
+    .postContainer{
         display: flex;
         flex:2;
         width: 100%;
