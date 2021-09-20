@@ -2,7 +2,10 @@ import "./Post.css"
 import { PermMedia, Label, Room, EmojiEmotions } from "@material-ui/icons";
 
 
-export default function Post() {
+export default function Post(
+    {post}
+) {
+    console.log(post)
     return (
         <div className="postContainer">
         
