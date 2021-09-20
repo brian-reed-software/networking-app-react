@@ -9,9 +9,9 @@ export default function Online({Users}) {
         <img alt ="" className="rightbarProfileImg" 
         src="/assets/person/4.jpeg" 
         alt=""/>
-        <div className="rightbarProfileImgNameOnline">
+        <div className="rightbarProfileOnline">
          </div>
-        <span className="rightbarProfileImgName">
+        <span className="rightbarProfileUsername">
             Leoe
         </span>
         </div>
