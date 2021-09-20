@@ -1,14 +1,14 @@
 import "./Rightbar.css"
-import { RssFeed, Chat, OndemandVideo, Group, Bookmark, HelpOutline, Event, School  } from "@material-ui/icons";
-
-
+import {Bookmark, HelpOutline, Event, School  } from "@material-ui/icons";
+import Online from "../../componants/online/Online";
+import {Users} from "../../Data.js"
 export default function Rightbar() {
     return (
         <div className="rightbarContainer">
         <div className="rightbarWrapper">
             <ul className="rightbarList">
             <li className="rightbarListItem">
-            <img className="birthdayImg" 
+            <img alt ="" className="birthdayImg" 
             src="/assets/gift.png" 
             alt=""/>
                     <span className="rightbarListItemText">
@@ -18,47 +18,17 @@ export default function Rightbar() {
 
                 </li>
                 <li className="rightbarListItem">
+                        Friends Online
                     <span className="rightbardFriendOnline">
-                    Friends Online
-
                     </span>
                 </li>
+
                 <li className="rightbarListItem">
-                <span className="rightbarFriendItem">
-                        <div className="rightbarProfileImgContainer">
-                        <img className="rightbarProfileImg" 
-                        src="/assets/person/4.jpeg" 
-                        alt=""/>
-                        <div className="rightbarProfileImgNameOnline">
-                         
-                         </div>
 
-                        <span className="rightbarProfileImgName">
-                            Leoe
-                        </span>
-                        </div>
+                    <Online/>
 
-
-                    </span>
                 </li>
                 <li className="rightbarListItem">
-                <span className="rightbarFriendItem">
-                        <div className="rightbarProfileImgContainer">
-                        <img className="rightbarProfileImg" 
-                        src="/assets/person/4.jpeg" 
-                        alt=""/>
-                        <div className="rightbarProfileImgNameOnline">
-                         
-                         </div>
-
-                        <span className="rightbarProfileImgName">
-                            Leoeeeeeeeeeeeeee
-                        </span>
-                        </div>
-
-
-                    </span>
- 
                 </li>
                 <li className="rightbarListItem">
                     <Bookmark className="rightbarIcon" />
@@ -91,37 +61,37 @@ export default function Rightbar() {
             <hr className="rightbarHr"/>
             <div className="rightbarFriendWrapper">
             <li className="rightbarFriend">
-                <img className="rightbarFriendImg" src="/assets/person/2.jpeg"/>
+                <img alt ="" className="rightbarFriendImg" src="/assets/person/2.jpeg"/>
                 <span className="rightbarFriendName">
                     Friend Name
                 </span>
             </li>
             <li className="rightbarFriend">
-                <img className="rightbarFriendImg" src="/assets/person/2.jpeg"/>
+                <img alt ="" className="rightbarFriendImg" src="/assets/person/2.jpeg"/>
                 <span className="rightbarFriendName">
                     Friend Name
                 </span>
             </li>
             <li className="rightbarFriend">
-                <img className="rightbarFriendImg" src="/assets/person/2.jpeg"/>
+                <img alt ="" className="rightbarFriendImg" src="/assets/person/2.jpeg"/>
                 <span className="rightbarFriendName">
                     Friend Name
                 </span>
             </li>
             <li className="rightbarFriend">
-                <img className="rightbarFriendImg" src="/assets/person/2.jpeg"/>
+                <img alt ="" className="rightbarFriendImg" src="/assets/person/2.jpeg"/>
                 <span className="rightbarFriendName">
                     Friend Name
                 </span>
             </li>
             <li className="rightbarFriend">
-                <img className="rightbarFriendImg" src="/assets/person/2.jpeg"/>
+                <img alt ="" className="rightbarFriendImg" src="/assets/person/2.jpeg"/>
                 <span className="rightbarFriendName">
                     Friend Name
                 </span>
             </li>
             <li className="rightbarFriend">
-                <img className="rightbarFriendImg" src="/assets/person/2.jpeg"/>
+                <img alt ="" className="rightbarFriendImg" src="/assets/person/2.jpeg"/>
                 <span className="rightbarFriendName">
                     Friend Name
                 </span>

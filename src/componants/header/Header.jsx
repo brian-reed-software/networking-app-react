@@ -6,7 +6,10 @@ export default function Header() {
     return (
         <div className="headerContainer">
             <div className="headerLeft">
-                <span className="logoSpan"><img  className="logo" src="https://res.cloudinary.com/at100dev/image/upload/v1628713361/social_again_l9lsgr.svg"></img></span>
+                <span className="logoSpan">
+                    <img alt =""  
+                    className="logo" 
+                    src="https://res.cloudinary.com/at100dev/image/upload/v1628713361/social_again_l9lsgr.svg"></img></span>
             </div>
             <div className="headerCenter">
                 <div className="searchBar">
@@ -44,7 +47,9 @@ export default function Header() {
                     </div>
                     </div>
                     </div>
-                <img src="/assets/person/1.jpeg" alt="" className="headerImg" />
+                <img alt ="" src="/assets/person/1.jpeg" 
+                alt="" 
+                className="headerImg" />
             </div>
             </div>
     );

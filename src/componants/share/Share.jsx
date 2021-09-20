@@ -9,7 +9,7 @@ export default function Share() {
             <div className="shareUserInfoWrapper">
             <div className="shareUserInfo">
             <div className="userName">
-            <img className="shareProfileImg" src="/assets/person/1.jpeg" alt="" />
+            <img alt ="" className="shareProfileImg" src="/assets/person/1.jpeg" alt="" />
             <div className="shareProfileText">
                 Betty
             </div>
