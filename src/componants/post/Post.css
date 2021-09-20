@@ -7,10 +7,7 @@
     color: white;
     filter: drop-shadow(0px 5px 4px black);
     margin: 10px;
-    background-image: url(https://flevix.com/wp-content/uploads/2019/12/Blue-Wave-Background-1.svg);
-    background-size: cover;
-    background-position-x: right;
-    background-position-y: bottom;
+
 }
 .postWrapper{
     display: flex;
@@ -18,13 +15,16 @@
     align-items: center;
     flex-direction: column;
     padding: 5px;
+    margin:10px;
     border-radius: 10px;
     text-shadow: 0px 1px 3px black;
     box-shadow: inset 0 0 6px 0px black;
-     backdrop-filter: blur(10px) drop-shadow(2px 4px 6px black);
-    backdrop-filter: hue-rotate(
-        233deg
-        );
+    background-image: url(https://flevix.com/wp-content/uploads/2019/12/Blue-Wave-Background-1.svg), linear-gradient(to left top, rgba(231,174,104,1.9), rgba(47,44,29,1.9) );
+    background-size: cover;
+    background-position-x: right;
+    background-position-y: bottom;
+    background-blend-mode: multiply;
+
 }
 .postUserWrapper{
     display: flex;
@@ -36,10 +36,14 @@
     align-items: center;
     filter: drop-shadow(0px 5px 5px black);
 }
-.postStoryWrapper{
+.postInfoWrapper{
     width:-webkit-fill-available;
     display: flex;
     flex-direction: column;
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-top: 50px;
+    margin-right: 10px;
 }
 .postIcons{
 }
@@ -63,10 +67,11 @@
     padding: 10px;
 }
 .postImg{
+    border-radius: 10px 10px 0px 0px;
     object-fit: contain;
     width: 100%;
     border-radius: 10px;
-    margin-bottom: -125px;
+    margin-bottom: -150px;
     box-shadow: inset 0 0 16px 10px black;
 }
 .postProfileText{
@@ -137,11 +142,22 @@
 .postOptionComments{
     cursor: pointer;
 }
-
+.postStoryWrapper{
+    z-index: -20;
+    width: -webkit-fill-available;
+    margin-top: -80px;
+    border-radius: 10px;
+    padding: 10px;
+}
 .postStory{
+    color: white;
     width:-webkit-fill-available;
     display: flex;
     flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    background-color: transparent;
+    border:none;
 }
 .postName{
     width: -webkit-fill-available;
