@@ -7,33 +7,40 @@
     margin:5px;
     height:80px;
     padding: 5px;
-    box-shadow: inset 0 0 23px -2px deeppink,inset 0 0 8px 5px white;
-    border-radius: 100px;
+    box-shadow: inset 0 0 23px 1px deeppink, inset 0 0 8px 5px white;
+    border-radius: 100%;
     cursor: pointer;
 }
 .rightbarUserList{
-    width: 25%;
-    margin:5px;
+    width: 4vw;
+    min-width: 55px;
+    margin: 5px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 .rightbarFriendList{
 }
 .rightbarProfileImg{
     margin: 2%;
-    width: 50px;
-    /* height: 50px; */
-    object-fit: cover;
-    border-radius: 50px;
-    cursor: pointer;
-    box-shadow: 0 0 23px -2px deeppink, 0 2px 5px 2px white;
-}
-.rightbarProfileImg:hover{
-    margin:2%;
+    width: 55px;
+    height: 65px;
     object-fit: cover;
     border-radius: 100%;
-    cursor: pointer;    
+    cursor: pointer;
     box-shadow: 0 0 23px -2px deeppink, 0 2px 5px 2px white;
+    filter: drop-shadow(0px 3px 0px deeppink);
+}
+.rightbarProfileImgContainer:hover{
+    margin: 2%;
+    object-fit: cover;
+    border-radius: 100%;
+    /* height: 75px; */
+    cursor: pointer;
+    padding: 4px;
+    margin-top: -3px;
+    box-shadow: 0 0 23px -2px deeppink, 0 2px 5px 2px white;
+    filter: drop-shadow(0px 3px 0px deeppink);
 }
 .rightbarProfileUsername{
     color:white;
@@ -47,27 +54,51 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50px;
+    justify-content: center;
+    width: 100%;
     padding-top:-105px;
     border-radius: 100px;
     cursor: pointer;
-    margin-top: -20px;
-    border:2px solid greenyellow;
-    box-shadow: inset 0 0 23px -2px deeppink, inset 0 0 8px 5px white;
+    margin-top: -53px;
+    text-shadow: 0px 0px 10px deeppink;
+    filter: drop-shadow(0px 2px 2px black);
 }
 
 .rightbarProfileOnline2{
-    position: relative;
     display: flex;
-    /* display: none; */
-    align-items: flex-end;
-    border-radius: 20px;
-    justify-content: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
     width: 50px;
-    height:80px;
-    padding: 10px;
-    z-index: -1;
-    border:5px solid greenyellow;
-    border-radius: 100px;
-    filter: drop-shadow(0px 0px 5px greenyellow);
+    margin: 5px;
+    height: 80px;
+    padding: 5px;
+    z-index: 2;
+    margin-top: -95px;
+    box-shadow: inset 0 0 0px 0px white, inset 0 0 6px 1px white;
+    border-radius: 100%;
+    cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+    body {
+      background-color: black;
+    }
+    .rightbarUserList{
+        margin:2px;
+        min-width: 10px;
+        width: 13vw;
+    }
+    .rightbarProfileImgContainer{
+        width:35px;
+        height: 35px;
+    }
+    .rightbarProfileImg{
+        width:35px;
+        height: 35px;
+    }
+    .rightbarProfileOnline2{
+        width: 35px;
+        height: 35px;
+        margin-top: -49px;
+    }
 }

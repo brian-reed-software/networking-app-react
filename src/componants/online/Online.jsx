@@ -10,15 +10,13 @@ export default function Online({user}) {
         <img alt ="" className="rightbarProfileImg" 
         src={user.profilePicture} 
         alt=""/>
-
-
-
         </div>
         <div className="rightbarProfileOnline">
         <span className="rightbarProfileUsername">
             {user.username}
         </span>
          </div>
+         <div className="rightbarProfileOnline2"></div>
     </span>
     </div>
 

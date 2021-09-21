@@ -48,6 +48,7 @@ li{
     margin-left: 25px;
     margin-top: -10px;
     cursor: pointer;
+    filter: drop-shadow(1px 1px 1px white);
 }
 .sidebarListItem{
     margin-bottom: 10px;
@@ -89,6 +90,7 @@ li{
     margin-left: 35px;
     margin-top: -15px;
     cursor: pointer;
+    filter: drop-shadow(1px 1px 1px white);
 }
 .sidebarIcon{
     width: 32px;
@@ -117,7 +119,7 @@ li{
         backdrop-filter: blur(10px);
         width: -webkit-fill-available;
         height: auto;
-        padding-top: 50px;
+        padding-top: 0px;
     }
     .sidebarWrapper{
         display: flex;

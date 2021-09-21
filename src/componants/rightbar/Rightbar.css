@@ -19,7 +19,15 @@
     width:26px;
     height: 26px;
 }
-
+.rightbarFriendsOnlineCount{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: deeppink;
+    text-shadow: 0 1px 5px deeppink;
+    filter: drop-shadow(2px 4px 6px deeppink);
+    font-size: larger;
+}
 
 ::-webkit-scrollbar{
     width:5px;
@@ -59,6 +67,7 @@ li{
     margin-left: 25px;
     margin-top: -10px;
     cursor: pointer;
+    filter: drop-shadow(1px 1px 1px white);
 }
 .rightbarListItem{
     margin-bottom: 10px;
@@ -100,6 +109,7 @@ li{
     margin-left: 35px;
     margin-top: -15px;
     cursor: pointer;
+    filter: drop-shadow(1px 1px 1px white);
 }
 .rightbarIcon{
     width: 32px;
@@ -107,6 +117,21 @@ li{
 }
 .rightbarFriendWrapper{
 
+}
+.rightbarBirthdayOnline{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.rightbarFriendsOnlineCount{
+    height: 10px;
+    padding: 0;
+    margin: 0;
+}
+.birthdayImg{
+    width: 10px;
+    height: 10px;
 }
 .MuiSvgIcon-root{
     width: 32px;
@@ -117,7 +142,9 @@ li{
     body {
       background-color: black;
     }
+
 .rightbarContainer{
+        bottom:0;
         display: flex;
         justify-content: center;
         flex: 0;    
@@ -128,13 +155,16 @@ li{
         backdrop-filter: blur(10px);
         width: -webkit-fill-available;
         height: auto;
-        padding-top: 50px;
     }
     .rightbarWrapper{
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 98%;
+    }
+    .rightbarList{
+        display: flex;
+        flex-direction: column;
     }
     ul{
         padding: 0px;

@@ -14,7 +14,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 5px;
     margin:10px;
     border-radius: 10px;
     text-shadow: 0px 1px 3px black;
@@ -25,6 +24,8 @@
     background-position-x: right;
     background-position-y: bottom;
     background-blend-mode: multiply;
+    box-shadow: inset 0 0 23px 1px black, inset -10px -10px 37px -10px black;
+    border-radius: 25px;
 
 }
 .postUserWrapper{
@@ -36,6 +37,8 @@
     flex-wrap: wrap;
     align-items: center;
     filter: drop-shadow(0px 5px 5px black);
+    box-shadow: inset 0 0 3px 0px white, inset 10px 10px 12px -10px white;
+    border-radius:25px;
 }
 .postInfoWrapper{
     width:-webkit-fill-available;
@@ -77,7 +80,7 @@
 }
 .postProfileText{
     margin-top: -20px;
-    margin-left: 20px;
+    
 }
 .postBar{
     display: flex;
@@ -97,12 +100,14 @@
     margin-left: 30px;
     margin-top: 5px;
     background-color: transparent;
+    filter: drop-shadow(1px 1px 1px white);
 }
 .postInput:focus{
     outline: none;
     font-size: 2vw;
     font-weight: bold;
     height: 50px;
+    filter: drop-shadow(1px 1px 3px white);
 }
 .postHr{
     height:100%;
@@ -120,9 +125,13 @@
 }
 .postOptionLikes{
     width: 150px;
+    filter: drop-shadow(1px 1px 1px white);
 }
 .postOptionLocation{
-    width: 150px;
+    width: 150px;   
+}
+.commentCounter{
+    filter: drop-shadow(1px 1px 1px white);
 }
 
 
@@ -133,6 +142,7 @@
 }
 .postOptionText{
     padding: 2px;
+    filter: drop-shadow(1px 1px 1px white);
 }
 .postOptionEmoji{
 
@@ -166,6 +176,7 @@
     justify-content: flex-start;
     padding-top: 10px;
     padding-bottom: 10px;
+    filter: drop-shadow(1px 1px 1px white);
 }
 .postButton{
     color: white;
@@ -186,6 +197,7 @@
 .postNameText{
     display: flex;
     flex-direction: column;
+    filter: drop-shadow(1px 1px 1px white);
 }
 .postButton:hover{
     margin-top: 10px;
@@ -222,7 +234,17 @@
     content: '';
     padding-left: -20px;
 }
-
+.postUsername{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    filter: drop-shadow(1px 1px 1px white);
+}
+.postDate{
+    display: flex;
+    justify-content: flex-end;
+    filter: drop-shadow(1px 1px 1px white);
+}
 
 @media screen and (max-width: 600px) {
     body {

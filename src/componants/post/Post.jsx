@@ -1,9 +1,15 @@
 import "./Post.css"
 import { PermMedia, Room, EmojiEmotions } from "@material-ui/icons";
-
+import { Users } from "../../Data.js"
 
 export default function Post({post}) {
-    console.log(post.like)
+    // //check post works
+    // console.log(post.like)
+    
+    // const user = Users.filter((u)=> u.id===1)
+
+    // check user works
+    // console.log(user.username)
     return (
         <div className="postContainer">
         
@@ -13,7 +19,10 @@ export default function Post({post}) {
                     <PermMedia className="postIcons"/> 
                     Image Name posted min 20 ago
                     </span>
-                        <img alt ="" className="postImg" alt="" src="/assets/post/8.jpeg" ></img>
+                        <img alt ="" 
+                        className="postImg" 
+                        alt="" 
+                        src={post.photo} />
                 <div className="postInfoWrapper">
 
                 <div className="postLocEmoji">
@@ -37,9 +46,8 @@ export default function Post({post}) {
                 <div className="postOptionLocEmoji">
                 <EmojiEmotions className="postIcons"/>
                     <span className="postOptionLikes">
-                        Likes
                         <span className="likesCounter">
-                            {post.like}
+                            {post.like} People like it
                         </span>
                     </span>
                 </div>
@@ -57,7 +65,7 @@ export default function Post({post}) {
                     20
                 </span>
                 <span className="postOptionText">
-                    {post.comment}
+                    {post.comment} comments
                 </span> 
                 </div>
 
@@ -67,10 +75,25 @@ export default function Post({post}) {
                 <textarea
                      className="postStory"
                      value="" disabled>   
-                        this Story
-                        this story
-                        this story
+                        {post?.desc}
                     </textarea>
+            </div>
+
+            <div className="postUserInfoWrapper">
+            <div className="postUserInfo">
+            <div className="postUsername">
+            <img alt ="" className="postProfileImg" 
+            src={Users.filter((u) => u.id === post?.userId)[0].profilePicture} alt="" />
+            <div className="postProfileText">
+                {Users.filter((u) => u.id === post?.userId)[0].username}
+            </div>
+            </div>
+            </div>
+            <div className="postBar">
+                <div className="postDate">
+            {post.date}
+            </div>
+            </div>
             </div>
     </div>    
     </div> 

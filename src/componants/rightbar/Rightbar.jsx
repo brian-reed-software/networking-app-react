@@ -8,16 +8,16 @@ export default function Rightbar() {
         <div className="rightbarWrapper">
             <ul className="rightbarList">
             <li className="rightbarListItem">
-            <img alt ="" className="birthdayImg" 
+
+                    <span className="rightbarBirthdayOnline">
+                    <img alt ="" className="birthdayImg" 
             src="/assets/gift.png" 
             alt=""/>
-                    <span className="rightbarListItemText">
-                        
                         <b>Rajs</b> and 3 others have <b>birthdays</b> today!
                     </span>
 
                 </li>
-                <li className="rightbarListItem">
+                <li className="rightbarFriendsOnlineCount">
                         Friends Online
                     <span className="rightbardFriendOnline">
                     </span>
@@ -30,76 +30,16 @@ export default function Rightbar() {
                         )}
 
                 </div>
+
+                <li className="rightbarListItem">
+                </li>
                 
-                <li className="rightbarListItem">
-                </li>
-                <li className="rightbarListItem">
-                    <Bookmark className="rightbarIcon" />
-                    <span className="rightbarListItemText">
-                        Bookmarks
-                    </span>
-                </li>
-                <li className="rightbarListItem">
-                    <HelpOutline className="rightbarIcon" />
-                    <span className="rightbarListItemText">
-                        Help
-                    </span>
-                </li>
-                <li className="rightbarListItem">
-                    <Event className="rightbarIcon" />
-                    <span className="rightbarListItemText">
-                        Events
-                    </span>
-                </li>
-                <li className="rightbarListItem">
-                    <School className="rightbarIcon" />
-                    <span className="rightbarListItemText">
-                        School
-                    </span>
-                </li>
             </ul>
             <button className="rightbarButton">
                 Show More
             </button>
             <hr className="rightbarHr"/>
-            <div className="rightbarFriendWrapper">
-            <li className="rightbarFriend">
-                <img alt ="" className="rightbarFriendImg" src="/assets/person/2.jpeg"/>
-                <span className="rightbarFriendName">
-                    Friend Name
-                </span>
-            </li>
-            <li className="rightbarFriend">
-                <img alt ="" className="rightbarFriendImg" src="/assets/person/2.jpeg"/>
-                <span className="rightbarFriendName">
-                    Friend Name
-                </span>
-            </li>
-            <li className="rightbarFriend">
-                <img alt ="" className="rightbarFriendImg" src="/assets/person/2.jpeg"/>
-                <span className="rightbarFriendName">
-                    Friend Name
-                </span>
-            </li>
-            <li className="rightbarFriend">
-                <img alt ="" className="rightbarFriendImg" src="/assets/person/2.jpeg"/>
-                <span className="rightbarFriendName">
-                    Friend Name
-                </span>
-            </li>
-            <li className="rightbarFriend">
-                <img alt ="" className="rightbarFriendImg" src="/assets/person/2.jpeg"/>
-                <span className="rightbarFriendName">
-                    Friend Name
-                </span>
-            </li>
-            <li className="rightbarFriend">
-                <img alt ="" className="rightbarFriendImg" src="/assets/person/2.jpeg"/>
-                <span className="rightbarFriendName">
-                    Friend Name
-                </span>
-            </li>
-            </div>
+
             
         </div>
         </div>

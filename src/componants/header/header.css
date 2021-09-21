@@ -83,7 +83,10 @@
     margin-right: 10px;
     font-style: 14px;
     cursor: pointer;
-    filter: drop-shadow(0px 5px 4px black);
+    color: deeppink;
+    text-shadow: 0 1px 5px deeppink;
+    filter: drop-shadow(2px 4px 6px deeppink);
+    font-size: larger;
 }
 .headerIcons{
     display: flex;
@@ -129,6 +132,10 @@
     body {
       background-color: black;
     }
+    .sidebarFriendImg{
+        width: 10px;
+        height: 10px;
+    }
     .headerContainer{
         width: 100%;
         display: flex;
@@ -137,13 +144,17 @@
         position: fixed;
         top: 0;
         z-index: 20;
+        margin-top: -40px;
     }
     .headerWrapper{
         display: flex;
         flex-direction: row-reverse;
         width: -webkit-fill-available;
         justify-content: space-evenly;
-        padding: 10px;
+        padding: 5px;
+    }
+    .sidebarContainer{
+        padding-top: 1px;
     }
     .headerCenter{
         display: flex;
@@ -182,5 +193,8 @@
     }
     .searchInput{
     font-size: 2vw;
+    }
+    .sidebarButton{
+        padding:0px
     }
   }
