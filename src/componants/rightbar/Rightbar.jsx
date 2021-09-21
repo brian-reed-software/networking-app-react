@@ -23,13 +23,14 @@ export default function Rightbar() {
                     </span>
                 </li>
 
-                <li className="rightbarListItem">
+                <div className="rightbarFriendList">
 
                     {Users.map((u) =>
                     <Online key={u.id} user={u} />
                         )}
 
-                </li>
+                </div>
+                
                 <li className="rightbarListItem">
                 </li>
                 <li className="rightbarListItem">
