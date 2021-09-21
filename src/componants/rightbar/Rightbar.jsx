@@ -25,7 +25,9 @@ export default function Rightbar() {
 
                 <li className="rightbarListItem">
 
-                    <Online/>
+                    {Users.map((u) =>
+                    <Online key={u.id} user={u} />
+                        )}
 
                 </li>
                 <li className="rightbarListItem">

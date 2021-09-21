@@ -1,20 +1,23 @@
+import userEvent from "@testing-library/user-event"
 import "./Online.css"
 
-export default function Online({Users}) {
+export default function Online({user}) {
     return (
        
         <li className="rightbarListItem">
         <span className="rightbarFriendItem">
         <div className="rightbarProfileImgContainer">
         <img alt ="" className="rightbarProfileImg" 
-        src="/assets/person/4.jpeg" 
+        src={user.profilePicture} 
         alt=""/>
+
+        <span className="rightbarProfileUsername">
+            {user.username}
+        </span>
+
+        </div>
         <div className="rightbarProfileOnline">
          </div>
-        <span className="rightbarProfileUsername">
-            Leoe
-        </span>
-        </div>
     </span>
     </li>
 
