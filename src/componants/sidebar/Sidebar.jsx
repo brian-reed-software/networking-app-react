@@ -1,5 +1,6 @@
 import "./Sidebar.css"
 import { RssFeed, Chat, OndemandVideo, Group, Bookmark, HelpOutline, Event, School  } from "@material-ui/icons";
+import CloseFriend from "../../componants/closeFriend/CloseFriend";
 
 
 export default function Header() {
@@ -60,43 +61,9 @@ export default function Header() {
                 Show More
             </button>
             <hr className="sidebarHr"/>
+            Close Friends
             <div className="sidebarFriendWrapper">
-            <li className="sidebarFriend">
-                <img alt ="" className="sidebarFriendImg" src="/assets/person/2.jpeg"/>
-                <span className="sidebarFriendName">
-                    Friend Name
-                </span>
-            </li>
-            <li className="sidebarFriend">
-                <img alt ="" className="sidebarFriendImg" src="/assets/person/2.jpeg"/>
-                <span className="sidebarFriendName">
-                    Friend Name
-                </span>
-            </li>
-            <li className="sidebarFriend">
-                <img alt ="" className="sidebarFriendImg" src="/assets/person/2.jpeg"/>
-                <span className="sidebarFriendName">
-                    Friend Name
-                </span>
-            </li>
-            <li className="sidebarFriend">
-                <img alt ="" className="sidebarFriendImg" src="/assets/person/2.jpeg"/>
-                <span className="sidebarFriendName">
-                    Friend Name
-                </span>
-            </li>
-            <li className="sidebarFriend">
-                <img alt ="" className="sidebarFriendImg" src="/assets/person/2.jpeg"/>
-                <span className="sidebarFriendName">
-                    Friend Name
-                </span>
-            </li>
-            <li className="sidebarFriend">
-                <img alt ="" className="sidebarFriendImg" src="/assets/person/2.jpeg"/>
-                <span className="sidebarFriendName">
-                    Friend Name
-                </span>
-            </li>
+                <CloseFriend />
             </div>
             
         </div>

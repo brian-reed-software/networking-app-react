@@ -185,7 +185,6 @@ li{
     .sidebarFriendWrapper{
      width: -webkit-fill-available;
      display: flex;
-     flex-direction: row;
-     justify-content: space-between;
+     flex-wrap: wrap;
     }
 }
