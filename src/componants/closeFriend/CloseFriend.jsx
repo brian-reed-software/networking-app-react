@@ -4,16 +4,16 @@ import {  } from "@material-ui/icons";
 import {Users} from "../../Data.js"
 import Online from "../online/Online";
 
-export default function CloseFriend() {
+export default function CloseFriend({user}) {
     return (
-        <div className="closeFriendContainer">
-            <div className="closeFriendWrapper">
-
+        <li className="sidebarFriend">
+            <img className="sidebarFriendImg" src={user.profilePicture} alt=""/>
+            <span className="sidebarFriendName">{user.username}</span>
+                
                 {Users.map((u) =>
                     <Online key={u.id} user={u} />
                         )}
 
-            </div>
-        </div>
+        </li>
     );
 }

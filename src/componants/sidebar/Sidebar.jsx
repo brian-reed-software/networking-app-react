@@ -1,7 +1,8 @@
 import "./Sidebar.css"
 import { RssFeed, Chat, OndemandVideo, Group, Bookmark, HelpOutline, Event, School  } from "@material-ui/icons";
 import CloseFriend from "../../componants/closeFriend/CloseFriend";
-
+import Online from "../../componants/online/Online";
+import { Users } from "../../Data";
 
 export default function Header() {
     return (
@@ -63,7 +64,13 @@ export default function Header() {
             <hr className="sidebarHr"/>
             Close Friends
             <div className="sidebarFriendWrapper">
-                <CloseFriend />
+            <li className="sidebarFriend">
+                <span className="sidebarFriendName">
+                </span>
+            </li>
+                {Users.map(u=>(
+                    <CloseFriend key={u.id} user={u} />
+                ))}
             </div>
             
         </div>
