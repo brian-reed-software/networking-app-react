@@ -1,3 +1,6 @@
+[build]
+  functions = "functions"
+  publish = "build"
 [[redirects]]
   from = "/*"
   to = "https://friends-again-api.netlify/:splat"
