@@ -1,8 +1,3 @@
-[build]
-  functions = "functions"
-  publish = "build"
-[[redirects]]
-  from = "/*"
-  to = "https://friends-again-api.netlify/:splat"
-  status = 200
-  force = true
+/api/*  https://myherokuapp.herokuapp.com/api/:splat  200
+
+/*    /index.js   200
