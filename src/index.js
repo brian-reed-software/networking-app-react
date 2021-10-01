@@ -12,4 +12,3 @@ ReactDOM.render(
   document.getElementById("root")
 );
 
-const res = await fetch('https://friends-again-api.herokuapp.com/scores/')
