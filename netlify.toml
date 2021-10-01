@@ -1,7 +1,5 @@
-[build.environment]
-NODE_ENV = "production"
-
-[context.dev.environment]
-NODE_ENV = "dev"
-
-/*  https://friends-again-api.netlify/:splat 200
+[[redirects]]
+  from = "/*"
+  to = "https://friends-again-api.netlify/:splat"
+  status = 200
+  force = true
