@@ -1,0 +1,275 @@
+.postContainer{
+    width: -webkit-fill-available;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    filter: drop-shadow(0px 5px 4px black);
+    margin: 10px;
+
+}
+.postWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin:10px;
+    border-radius: 10px;
+    text-shadow: 0px 1px 3px black;
+    background-image: url(https://flevix.com/wp-content/uploads/2019/12/Blue-Wave-Background-1.svg), linear-gradient(to left top, rgba(231,174,104,1.9), rgba(47,44,29,1.9) );
+    background-size: cover;
+    background-position-x: right;
+    background-position-y: bottom;
+    background-blend-mode: multiply;
+    box-shadow: inset 0 0 23px 1px black, inset -10px -10px 37px -10px black;
+    border-radius: 25px;
+
+}
+.postUserWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: -webkit-fill-available;
+    padding: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    filter: drop-shadow(0px 5px 5px black);
+    box-shadow: inset 0 0 3px 0px white, inset 10px 10px 12px -10px white;
+    border-radius:25px;
+}
+.postInfoWrapper{
+    width:-webkit-fill-available;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-top: 50px;
+    margin-right: 10px;
+}
+.postIcons{
+}
+.postUserInfoWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: -webkit-fill-available;
+    padding:10px;
+}
+.postUserInfo{
+
+    width: -webkit-fill-available;
+}
+.postProfileImg{
+    width: 56px;
+    height: 56px;
+    border-radius: 100%;
+    object-fit: cover;
+    padding: 10px;
+    margin-left: 14vw;
+}
+.postImg{
+    border-radius: 10px 10px 0px 0px;
+    object-fit: contain;
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: -90px;
+    box-shadow: inset 0 0 16px 10px black;
+}
+.postProfileText{
+    margin-top: -20px;
+    
+}
+.postBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: -webkit-fill-available;
+    height: 30px;
+    border-bottom: 1px solid white;
+}
+.postInput{
+    border: none;
+    color: white;
+    font-size: 1.5vw;
+    width: 98%;
+    margin-left: 30px;
+    margin-top: 5px;
+    background-color: transparent;
+    filter: drop-shadow(1px 1px 1px white);
+}
+.postInput:focus{
+    outline: none;
+    font-size: 2vw;
+    font-weight: bold;
+    height: 50px;
+    filter: drop-shadow(1px 1px 3px white);
+}
+.postHr{
+    height:100%;
+    margin: 10 0px;
+    border: 1px solid black ;
+}
+.postOption{
+    width: 150px;
+}
+.postOptionEmoji{
+    width: 150px;
+}
+.postOptionComments{
+    width: 150px;
+}
+.postOptionLikes{
+    width: -webkit-fill-available;
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    filter: drop-shadow(1px 1px 1px white);
+}
+.postOptionLocation{
+    width: 150px;   
+}
+.commentCounter{
+    filter: drop-shadow(1px 1px 1px white);
+}
+
+
+.postLocEmoji{
+    width: -webkit-fill-available;
+    display: flex;
+    justify-content: space-between;
+}
+.postOptionText{
+    padding: 2px;
+    filter: drop-shadow(1px 1px 1px white);
+}
+.postOptionEmoji{
+
+}
+.postOptionLikes{
+
+}
+.postOptionComments{
+    cursor: pointer;
+}
+.postStoryWrapper{
+    z-index: -20;
+    width: -webkit-fill-available;
+    margin-top: -80px;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.postStory{
+    color: white;
+    width:-webkit-fill-available;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    background-color: transparent;
+    border:none;
+}
+.postName{
+    width: -webkit-fill-available;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    filter: drop-shadow(1px 1px 1px white);
+}
+.postButton{
+    color: white;
+    margin-left: -95px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-top: 20px;
+    border-radius: 10px 10px 0px 0px;
+    background-color: rgba(255,255,255,.2);
+    box-shadow: inset 0 0 6px 2px white;
+    filter: drop-shadow(0px 5px 4px black);
+    cursor: pointer;
+    user-select: none;
+    transition: all .5s ease-in-out;
+}
+.postNameText{
+    display: flex;
+    flex-direction: column;
+    filter: drop-shadow(1px 1px 1px white);
+}
+.postButton:hover{
+    margin-top: 10px;
+    padding-bottom: 21px;
+    background-color: rgba(255,255,255,.2);
+    box-shadow: inset 0 0px 8px 0px white;
+    filter: drop-shadow(0px -4px 3px 3px black);
+    user-select: none;
+    transition: all .5s ease-in-out;
+}
+
+.postButton:active{
+    content: "";
+    color: black;
+    margin-left: -95px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-top: 0px;
+    font-size: 30px;
+    letter-spacing: -3px;
+    text-shadow: 0px 5px 5px black;
+    box-shadow: inset 0 0px 28px 0px white;
+    filter: invert(150%);
+    filter: drop-shadow(0px 0px 8px 8px black);
+    user-select: none;
+    transition: ease-out;
+}
+.postButton:active:before{
+    visibility: none;
+}
+.postButton:active:after{
+    content: '';
+    padding-left: -20px;
+}
+.postUsername{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    filter: drop-shadow(1px 1px 1px white);
+}
+.postDate{
+    display: flex;
+    justify-content: flex-end;
+    filter: drop-shadow(1px 1px 1px white);
+}
+.likeIcon{
+    width:50px;
+    height: 50px;
+}
+.likeBox{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.postLikeCounter{
+    margin-top: -40px;
+    margin-left: 60px;
+    z-index: 20;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+      background-color: black;
+    }
+    .postContainer{
+        display: flex;
+        flex:2;
+        width: 100%;
+        flex-direction: row;
+    }
+}

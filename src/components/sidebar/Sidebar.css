@@ -1,0 +1,193 @@
+.sidebarContainer{
+    display: flex;
+    flex:1;
+    height: calc(100vh - 50px);
+    overflow-y: scroll;
+    min-width: 200px;
+    color: white;
+    z-index: 19;
+    text-shadow: 0px 1px 3px black;    
+    backdrop-filter: blur(3px) brightness(1.5);
+    background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgba(5,5,25,.9));
+    position: sticky;
+    top:50px;
+}
+::-webkit-scrollbar{
+    width:5px;
+}
+::-webkit-scrollbar-track{
+    background-color: #3086c4;
+}
+::-webkit-scrollbar-thumb{
+    background-color: white;
+    left: 0;
+}
+
+.sidebarWrapper{
+    display: flex;
+    flex-direction: column;
+    width: -webkit-fill-available;
+    padding: 5px
+}
+
+
+ul{
+    padding: 0px;
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+li{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    filter: drop-shadow(0px 5px 4px black);
+}
+.sidebarListItemText{
+    position: relative;
+    margin-left: 25px;
+    margin-top: -10px;
+    cursor: pointer;
+    filter: drop-shadow(1px 1px 1px white);
+}
+.sidebarListItem{
+    margin-bottom: 10px;
+}
+.sidebarButton{
+    width: 100%;
+    border:none;
+    padding:10px;
+    border-radius: 0px;
+    font-weight: bold;
+    cursor: pointer;
+    filter: drop-shadow(0px 5px 4px black);
+}
+.sidebarHr{
+    margin:10px 0;
+    border: 1px solid black;
+    filter: drop-shadow(0px 5px 4px black);
+}
+.sidebarFriendList{
+    padding:0;
+    margin:0;
+    list-style: none;
+}
+.sidebarFriend{
+    display: flex;
+    margin-bottom: 15px;
+}
+.sidebarFriendImg{
+    display: flex;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+.sidebarFriendName{
+    position: relative;
+    margin-left: 35px;
+    margin-top: -15px;
+    cursor: pointer;
+    filter: drop-shadow(1px 1px 1px white);
+}
+.sidebarIcon{
+    width: 32px;
+    height: 32px;
+}
+.sidebarFriendWrapper{
+
+}
+.MuiSvgIcon-root{
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+    body {
+      background-color: black;
+    }
+.sidebarContainer{
+        display: flex;
+        justify-content: center;
+        flex: 0;    
+        padding: 0px;
+        flex-direction: row;
+        position: fixed;
+        background-color: transparent;
+        backdrop-filter: blur(10px);
+        width: -webkit-fill-available;
+        height: auto;
+        padding-top: 40px;
+    }
+    .sidebarWrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 98%;
+        height: 45px;
+    }
+    ul{
+        padding: 0px;
+        display: flex;
+        flex-direction: row;
+        display: flex;
+        justify-content: space-between;
+    }
+    li{
+        list-style-type: none;
+        padding-top: 10px;
+        filter: drop-shadow(0px 5px 4px black);
+    }
+    .feedContainer{
+        padding-top: 50px;
+        margin-top: 50px;
+    }
+    .sidebarListItem{
+        display: flex;
+        justify-content: center;
+        margin-top: 0px;
+        padding-top: 0px;
+        font-size: 8px;
+    }
+    .sidebarFriend{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+    .sidebarListItemText{
+        
+        display: flex;
+        justify-content: center;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    .sidebarFriendName{
+            margin-left: 0px;
+            margin-top: 0px;
+            font-size: 8px;
+    }
+    .sidebarIcon{
+        width: auto;
+    }
+    .MuiSvgIcon-root{
+        width: auto;
+    }
+    .sidebarButton{
+        width: 100%;
+        filter: drop-shadow(0px 5px 4px black);
+    }
+    .sidebarHr{
+        margin: 2px;
+    }
+    .sidebarFriendWrapper{
+     width: -webkit-fill-available;
+     display: flex;
+     flex-wrap: wrap;
+    }
+}
