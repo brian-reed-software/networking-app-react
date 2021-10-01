@@ -22,11 +22,11 @@ function App() {
           {/* {user ? <Home /> : <Register />} */}
           {user ? <Home /> : <Login />}
         </Route>
-        <Route path="/api/login">{user ? <Redirect to="/" /> : <Login />}</Route>
-        <Route path="/api/register">
+        <Route path="/login">{user ? <Redirect to="/" /> : <Login />}</Route>
+        <Route path="/register">
           {user ? <Redirect to="/" /> : <Register />}
         </Route>
-        <Route path="/api/profile/:username">
+        <Route path="/profile/:username">
           <Profile />
         </Route>
       </Switch>

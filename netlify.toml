@@ -1,8 +1,1 @@
-[build]
-  base = "/"
-  publish = "/"
-  command = ""
-  
-    /api/*  https://myherokuapp.herokuapp.com/:splat  200
-
-/*    /index.html   200
+[ /*  https://myherokuapp.herokuapp.com/:splat  200 ]
