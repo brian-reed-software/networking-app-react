@@ -1,5 +1,5 @@
 const response = await fetch(
-    `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API}`
+    `https://friends-again-api.netlify/`
   );
 
 const data = await response.json();
