@@ -6,8 +6,7 @@
     padding-top: 50px;
     margin-top: -50px;
     background-image: url(https://flevix.com/wp-content/uploads/2019/12/Live-Background-1.svg);
-    height: calc(100vh - 50px);
-
+    position: fixed;
 }
 
 

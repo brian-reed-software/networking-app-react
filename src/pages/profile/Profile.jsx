@@ -1,26 +1,58 @@
-import Header from "../../componants/header/Header";
-import Sidebar from "../../componants/sidebar/Sidebar";
-import Feed from "../../componants/feed/Feed";
-import Rightbar from "../../componants/rightbar/Rightbar";
+import Header from "../../components/header/Header";
+import Sidebar from "../../components/sidebar/Sidebar";
+import Feed from "../../components/feed/Feed";
+import Rightbar from "../../components/rightbar/Rightbar";
+import { useEffect, useState } from "react";
+import axios from "axios";
+import { useParams } from "react-router";
+import { Link } from "react-router-dom";
 import "./Profile.css"
 
-export default function Home() {
+export default function Profile() {
+  const PF = process.env.REACT_APP_PUBLIC_FOLDER;
+  const [user, setUser] = useState({});
+  const username = useParams().username;
+
+  useEffect(() => {
+    const fetchUser = async () => {
+      const res = await axios.get(`/users?username=${username}`);
+      setUser(res.data);
+    };
+    fetchUser();
+  }, [username]);
 
     return (
         <>
         <Header/>
-        <div className="profile">
+        <div className="profileContainer">
         <Sidebar/>
         <div className="profileRight">
             <div className="profileRightTop">
                 <div className="profileCover">
-                <img className="profileCoverImg" 
-                src="assets/post/3.jpeg" 
-                alt=""/>
-                <img className="profileUserImg" 
-                src="assets/person/7.jpeg" 
-                alt=""/>
-                    
+
+        <Link to={`/profile/${user.username}`}>
+          <img
+            src={
+              user.profilePicture
+                ? PF + user.profilePicture
+                : PF + user.profilePicture + '500x500/?landscape'
+            }
+            alt=""
+            className="profileCoverImg"
+          />
+        </Link>
+
+        <Link to={`/profile/${user.username}`}>
+          <img
+            src={
+              user.profilePicture
+                ? PF + user.profilePicture
+                : PF + user.profilePicture + '500x500/?woman?2'
+            }
+            alt=""
+            className="profileUserImg"
+          />
+        </Link>
                 </div>
                 <div className="profileInfo">
                     <h4 className="profileInfoName">Name</h4>
@@ -28,8 +60,8 @@ export default function Home() {
                 </div>
 
                 <div className="profileRightBottom">
-                <Feed/>
-                <Rightbar profile/>
+                <Feed username={username} />
+            <Rightbar user={user} />
                 </div>
             </div>
 
