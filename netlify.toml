@@ -1,1 +1,5 @@
-[ /*  https://myherokuapp.herokuapp.com/:splat  200 ]
+[build]
+command = CI= npm run build
+publish = "out"
+
+ /*  https://myherokuapp.herokuapp.com/:splat  200 
