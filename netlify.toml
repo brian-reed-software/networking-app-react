@@ -1,5 +1,5 @@
 [[redirects]]
-  from = "/"
+  from = "/*"
   to = "https://friends-again-api.herokuapp.com/api/ :splat"
   status = 200
   force = true # COMMENT: ensure that we always redirect
