@@ -4,7 +4,7 @@ module.exports = function(app) {
   app.use(
     '/api',
     createProxyMiddleware({
-      target: 'https://friends-again-api.herokuapp.com/api/',
+      target: 'https://friends-again-api.herokuapp.com/',
       changeOrigin: true,
     })
   );
