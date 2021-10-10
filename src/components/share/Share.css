@@ -1,4 +1,4 @@
-.shareContainer{
+.shareContainer {
     width: -webkit-fill-available;
     border-radius: 10px;
     display: flex;
@@ -9,23 +9,26 @@
     margin: 10px;
 
 }
-.shareWrapper{
+
+.shareWrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin:10px;
+    margin: 10px;
     border-radius: 10px;
     text-shadow: 1px 1px 3px black;
-    box-shadow: inset 0 0 23px 1px black, inset -10px -10px 37px -10px black;      background-image: url(https://flevix.com/wp-content/uploads/2019/12/Blue-Wave-Background-1.svg), linear-gradient(to left top, rgba(131,274,204,1.9), rgba(47,44,29,1.9) );
+    box-shadow: inset 0 0 23px 1px black, inset -10px -10px 37px -10px black;
+    background-image: url(https://flevix.com/wp-content/uploads/2019/12/Blue-Wave-Background-1.svg), linear-gradient(to left top, rgba(131, 274, 204, 1.9), rgba(47, 44, 29, 1.9));
     background-size: cover;
     background-position-x: right;
     background-position-y: bottom;
     background-blend-mode: multiply;
- border-radius: 25px;
+    border-radius: 25px;
 
 }
-.shareUserWrapper{
+
+.shareUserWrapper {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -35,36 +38,42 @@
     align-items: center;
     filter: drop-shadow(0px 5px 5px black);
     box-shadow: inset 0 0 3px 0px white, inset 10px 10px 12px -10px white;
-    border-radius:25px;
+    border-radius: 25px;
 }
-.shareIcons{
+
+.shareIcons {
     filter: drop-shadow(0px 5px 4px black);
 }
-.shareUserInfoWrapper{
+
+.shareUserInfoWrapper {
     display: flex;
     flex-direction: row;
     align-items: center;
     width: -webkit-fill-available;
-    
+
 }
-.shareUserInfo{
+
+.shareUserInfo {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     filter: drop-shadow(0px 5px 4px black);
 }
-.shareProfileImg{
+
+.shareProfileImg {
     width: 56px;
     height: 56px;
     border-radius: 100%;
     object-fit: cover;
     padding: 10px;
 }
-.shareProfileText{
+
+.shareProfileText {
     margin-top: -20px;
     filter: drop-shadow(1px 1px 1px white);
 }
-.shareBar{
+
+.shareBar {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,32 +84,34 @@
     margin-left: -30px;
     padding-right: 130px;
 }
-.shareInput{
+
+.shareInput {
     border: none;
     color: white;
     font-size: 1.5vw;
     width: 60%;
-    margin-left: 30px;
     margin-top: 5px;
     background-color: transparent;
     filter: drop-shadow(0px 5px 4px black);
 }
-.shareInput:focus{
+
+.shareInput:focus {
     outline: none;
     font-size: 2vw;
     font-weight: bold;
     height: 50px;
 }
-.shareHr{
-    height:100%;
+
+.shareHr {
+    height: 100%;
     margin: 10 0px;
-    border: 1px solid black ;
+    border: 1px solid black;
     filter: drop-shadow(0px 5px 4px black);
 }
-.shareOption{
 
-}
-.shareOptions{
+.shareOption {}
+
+.shareOptions {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -108,37 +119,41 @@
     padding: 10px;
     flex-wrap: wrap;
 }
-.shareOptionText{
+
+.shareOptionText {
     padding: 10px;
     filter: drop-shadow(1px 1px 1px white);
 }
-.userName{
+
+.userName {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.shareButton{
+
+.shareButton {
     color: white;
     padding-top: 10px;
     width: 100px;
     border-radius: 10px 10px 0px 0px;
-    background-color: rgba(255,255,255,.2);
+    background-color: rgba(255, 255, 255, .2);
     box-shadow: inset 0 0 6px 2px white;
     cursor: pointer;
     user-select: none;
     transition: all .5s ease-in-out;
     filter: drop-shadow(1px 1px 1px white);
 }
-.shareButton:hover{
+
+.shareButton:hover {
     padding-top: 25px;
-    background-color: rgba(255,255,255,.2);
+    background-color: rgba(255, 255, 255, .2);
     box-shadow: inset 0 0px 8px 0px white;
     filter: drop-shadow(0px -4px 3px 3px black);
     user-select: none;
     transition: all .5s ease-in-out;
 }
 
-.shareButton:active{
+.shareButton:active {
     color: black;
     padding-top: 5px;
 
@@ -152,24 +167,28 @@
     user-select: none;
     transition: ease-out;
 }
-.shareButton:active:before{
+
+.shareButton:active:before {
     visibility: none;
 }
-.shareButton:active:after{
+
+.shareButton:active:after {
     content: '';
     padding-left: -20px;
 }
-.shareTop{
+
+.shareTop {
     width: -webkit-fill-available;
 }
 
 @media screen and (max-width: 600px) {
     body {
-      background-color: black;
+        background-color: black;
     }
-    .shareContainer{
+
+    .shareContainer {
         display: flex;
-        flex:2;
+        flex: 2;
         width: 100%;
         flex-direction: row;
     }

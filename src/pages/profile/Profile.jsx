@@ -15,7 +15,7 @@ export default function Profile() {
 
   useEffect(() => {
     const fetchUser = async () => {
-      const res = await axios.get(`/users?username=${username}`);
+      const res = await axios.get(`https://friends-again-api.herokuapp.com/api/users?username=${username}`);
       setUser(res.data);
     };
     fetchUser();
