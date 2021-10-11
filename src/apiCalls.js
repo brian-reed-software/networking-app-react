@@ -5,7 +5,7 @@ export const loginCall = async (userCredential, dispatch) => {
     type: "LOGIN_START"
   });
   try {
-    const res = await axios.post("/api/auth/login", userCredential);
+    const res = await axios.post("https://friends-again-api.herokuapp.com/api/auth/login", userCredential);
     dispatch({
       type: "LOGIN_SUCCESS",
       payload: res.data
